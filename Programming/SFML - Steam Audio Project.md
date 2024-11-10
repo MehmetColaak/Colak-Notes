@@ -1,8 +1,8 @@
 - [x] Project base and github page
-- [ ] Steam audio api interface
-- [ ] Main app feature: Movement
+- [x] Steam audio api interface
+- [x] Main app feature: Movement
 - [ ] Main app feature: Events
-- [ ] Buffer conversion abstraction
+- [x] Buffer conversion abstraction
 - [ ] Cleaning up main function
 - [ ] Abstraction to different small source files
 - [ ] Main menu screen
