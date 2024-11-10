@@ -1,0 +1,6 @@
+- GTA modded server
+- Karlheinz Stockhausen Helicopter Quartet Recreation
+- 4 Helicopter operators
+- 4 Cello players
+- Character models with suit and cello
+- Gamification and challanges 

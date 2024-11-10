@@ -1,0 +1,5 @@
+- Reference: I am sitting in a room - Alvin Lucier
+- Reference: Iannis Xenakis, Formalized Music, Interview: Conversations with Iannis Xenakis
+- Reference: Salzburg MoMA Acoustic Room
+- Interactive Impulse Response Generation
+- Footsteps or small transient sounds.
