@@ -1,0 +1,11 @@
+- [x] Project base and github page
+- [ ] Steam audio api interface
+- [ ] Main app feature: Movement
+- [ ] Main app feature: Events
+- [ ] Buffer conversion abstraction
+- [ ] Cleaning up main function
+- [ ] Abstraction to different small source files
+- [ ] Main menu screen
+- [ ] Diagonal movement fix
+- [ ] HRTF and Binaural effect dynamic implementation
+- [ ] Debugging test scenarios

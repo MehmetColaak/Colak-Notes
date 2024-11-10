@@ -1,0 +1,8 @@
+- [x] CMake setup
+- [ ] WAV, RAW format filestream functions
+- [ ] Input and output buffers
+- [ ] Basic filtering processes
+- [ ] Reversing
+- [ ] Sine, saw, triangle wave functions
+- [ ] miniaudio implementation
+- [ ] Standalone single cycle wave generator
