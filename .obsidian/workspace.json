@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MasterThesis/Main.md",
+                "file": "Kunstuni/2024 Winter Semester/Critical Data I/Assignment I.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main"
+              "title": "Assignment I"
             }
           }
         ]
@@ -164,6 +164,11 @@
   },
   "active": "22897b5c00d7b159",
   "lastOpenFiles": [
+    "Kunstuni/2024 Winter Semester/Critical Data I/Main.md",
+    "Kunstuni/2024 Winter Semester/Critical Data I/Assignment I.md",
+    "MD Syntax Examples.md",
+    "Untitled.canvas",
+    "MasterThesis/Main.md",
     "MasterThesis/Mehmet Colak - Thesis Expose.pdf",
     "MasterThesis/Accepting Acoustics in Creatice Practices.pdf",
     "Programming/SFML - Steam Audio Project.md",
@@ -171,7 +176,6 @@
     "Programming/CPP Data Buffer Exercises.md",
     "mehmetcolak_portfolio_2024_v1.pdf",
     "Programming",
-    "MasterThesis/Main.md",
     "MasterThesis/Sources.md",
     "mehmet_colak_cv_240718.pdf",
     "Welcome.md",
