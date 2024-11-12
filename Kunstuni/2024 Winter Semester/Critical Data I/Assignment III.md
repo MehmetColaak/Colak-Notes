@@ -1,0 +1,16 @@
+## Reflection on Excavating AI 
+
+### The Politics of Images in Machine Learning Training Sets
+
+The Excavating AI is putting the highlight on hidden politics and power structures embedded within AI systems. The quote, _"Understanding the politics within AI systems matters more than ever, as they are quickly moving into the architecture of social institutions: deciding whom to interview for a job, which students are paying attention in class, which suspects to arrest, and much else,"_ again captures the urgency and complexity of the concerns really well.
+
+The authors use an analogy for exploring secret pattern and politics behind datasets which they named as an "Archeology of Datasets". With this analogy I found myself questioning buried biases and assumptions in dataset further in the article my feelings get set as a critical thinking to ai and datasets and human evaluation on data. For example, **the Japanese Female Facial Expression Dataset (JAFFE)**, which reveals that datasets are not merely collections of objective facts but are, in fact, reflections of the cultural and subjective biases of their creators. The sources from which datasets are gathered such as platforms like Amazon Mechanical Turk further complicate the issue. These sources are often populated by low-paid, precarious workers whose own positionality affects how they categorize and label data.
+
+One of the key issues the article highlights is the reliance on **taxonomy** for organizing information within datasets, as illustrated by the **ImageNet hierarchy**. In ImageNet, every concept is neatly classified under nine top-level categories: plant, geologic formation, natural object, sport, artifact, fungus, person, animal, and miscellaneous. But this apparent order and categorization creates a deeper problem which is the attempt to fit complex human identities and experiences into rigid categories. With this categorisation attempts the taxonomy becomes less about objective sorting and more about reinforcing societal biases, consciously or unconsciously.
+
+Datasets like ImageNet are often built on structures like **WordNet** which reminded me the interactive website https://neal.fun/infinite-craft/ and that makes me want to explore biases and assumption written in the interactive web app Infinite Craft. Infinite Craft using llama2 to generate linked or corresponding word with 2 different word. I did a small run and I achieved both America and Oil Tanker and not shockingly it generated word "War". Doing dataset archeology over model surface also gave me great experience.
+
+The article also critically examines attempts to mitigate these issues, such as IBM’s **Diversity in Faces dataset**, which was designed to address biases in facial recognition technology. However, the question arises: how is a “fair” distribution achieved within the dataset? Can diversity be measured solely in terms of surface-level attributes like race or gender? 
+
+Finally "Excavating AI" focuses on the need to think critically about the biases embedded in AI systems. These systems do not operate in a vacuum but are deeply intertwined with social, political, and historical contexts. The act of creating, labeling, and curating datasets is far from neutral; it is a political act that shapes how AI will perceived upon the world.
+
