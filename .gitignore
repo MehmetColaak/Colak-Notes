@@ -1,0 +1,44 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder attributes
+Icon?
+._*
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Obsidian workspace and cache files
+.obsidian/workspace
+.obsidian/cache
+.obsidian/workspace.json
+
+# Obsidian plugin data (optional, if you want to exclude plugin configurations)
+.obsidian/plugins/
+
+# Log files
+*.log
+
+# Node modules (if using any scripts within the vault)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.backup
+*.recovery
