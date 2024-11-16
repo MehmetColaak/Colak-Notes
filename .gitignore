@@ -12,6 +12,9 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+# JSON Files
+*.json
+
 # Temporary files
 *.tmp
 *.temp
