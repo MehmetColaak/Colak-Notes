@@ -6,3 +6,4 @@
 - Name: A Glimpse from Famous Tannhauser Gate
 
 - Footsteps and Rain over different materials. Flash Stories. Observation and nondirective interaction.
+- Exploring intuitive sonic interaction behaviour. Interconnectivity
