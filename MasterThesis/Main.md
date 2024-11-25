@@ -45,6 +45,7 @@ To explore these social behaviours, the thesis will use a questionnaire after pr
 - Data Collection and Analysis
     - Purpose and Scope
 - Artistic Experimentation
+    - A Glimpse from Tannhauser Gate
     - Description of Proposed Artwork
     - Human Interaction Goals
 - Technical Methods and Sound Approach
@@ -62,18 +63,25 @@ To explore these social behaviours, the thesis will use a questionnaire after pr
     - Feasibility
 #### Result and Discussion
 - Audience Feedback and Questionnaire Analysis
+    - Statistical Insights
+    - Expectations and Questionnaire Results
 - Key Themes and Observations
-- Feasibility and Artistic Potential
+    - Intuitiveness of Interaction
+    - Technical Challenges and Opportunities
 - Comparison with Literature
+    - Alignment with Prior Research
+    - Identified Differences
 - Audience Engagement
-- Technological Challenges and Opportunities
+    - Interactive Pattern and Behaviours
+    - Role of Artistic Expression
 #### Conclusion
+- Summary of Findings
 - Implications for Artists and Developers
+- Limitations of Research
+- Final Thoughts
 #### References
 #### Bibliography
 ## Bullet Notes
-- Acoustic Capturing
-- Sonic Interfaces
-- Conservatism
-- Stigmatization
-- Space Perception
+- Acoustic Snapshots
+- Immersive Audio
+- Conservatism and Stigmatization
