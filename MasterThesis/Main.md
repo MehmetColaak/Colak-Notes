@@ -1,37 +1,72 @@
 ## Title
 ****
-### Accepting Acoustics in Creative Practices: Conservatism and Stigmatization in the Adoption of Sonic Interfaces 
+### Embracing Sphere: A Critical Approach to the Adoption of Immersive Audio Technologies in Sound Art
 ## Topic
-Research is about how assistive technologies(in this thesis scope, sonic interfaces and acoustic technologies) are initially linked to disabled people by non-disabled individuals. It focuses on "Why assistive technologies often first gain traction within disabled communities?". First and easy answer is due to their immediate and obvious benefits, but there should be other social behaviours under the rug like conservatism and stigmatization.
+Immersive audio technologies, such as ambisonics and HRTF (Head-Related Transfer Function), aim to replicate spatial soundscapes, creating immersive auditory experiences. Despite their potential applications in gaming, virtual reality, cinema, and assistive tools for the visually impaired, the adoption of these technologies has faced barriers. These include technical challenges, high implementation costs, limited public awareness, and the need for compatible hardware and software. This research will examine the current state of 3D audio, factors limiting its broader adoption, and opportunities to accelerate innovation, particularly in enhancing storytelling and accessibility.
 
-Non-disabled individuals may practice conservatism in adopting assistive technologies, partly due to a lack of perceived immediate need or benefit. This conservative approach can slow the integration of such technologies into broader society until their utility is demonstrated in diverse contexts beyond disability support.
+The thesis aims to address these gaps by integrating acoustic technologies and sonic interfaces within artistic contexts. Procedural methods will be employed to synthesize room impulse responses based on interactive acoustic parameters. Through this exploration, the thesis will evaluate the feasibility and artistic potential of using sonic interfaces as tools for creative expression.
 
-The thesis aims to question and fill these existing gaps by using acoustic technologies and sonic interfaces in artistic contexts. Generative and procedural methods is going to get involved to synthesize room impulse responses based on interactive acoustic parameters, enabling artists to craft unique acoustic environments. By exploring generative technologies, the thesis will frame the feasibility and artistic value of using sonic interfaces in creative practices.
-
-To explore these social behaviours, the thesis will use a questionnaire after presenting sound art created with the technologies mentioned before. The survey will gather feedback from both disabled and non-disabled users to compare 2 different views and experiences. This will help reveal how these technologies are perceived, any barriers or biases to their adoption, and the overall acceptance of assistive technologies.
+To explore these social behaviours, the thesis will use a questionnaire after presenting sound art created with the technologies mentioned before. This will help reveal how these technologies are perceived, any barriers or biases to their adoption, and the overall acceptance of these immersive audio technologies.
 ## Structure
 #### Summary
 #### Table of Content
 #### Introduction
-- Background
+- Background, State of Art
+    - Immersion and Presence
+    - Immersive Audio Technologies
+    - Space and Audio
 - Research Questions and Objectives
-- Thesis Structure
+    - Benefits of Audio in Immersive Media
+    - Conservatism in Technology Adoption
+    - Stigmatization and Social Perceptions
+- Framework and Core Concepts
+    - Abbreviations and Key Terms
+    - Technologies and Concepts Overview
 #### Literature Review
-- Assistive Technologies
-- Adoption of Innovations 
-- Sonic Interfaces and Acoustic Technologies
-#### Methodology
+- Evolution of Audio Technologies
+    - History in Recorded Audio
+    - Theoretical Foundations of Spatial Sound
+    - Immersive Audio Standards and Frameworks
+    - Open-Source Contributions
+- Artistic and Practical Applications
+    - Immersive Audio in Media Arts
+    - Augmented and Virtual Reality
+- Artwork Examples
+    - Pioneering Sound Artists and Works
+    - Cross-Disciplinary Artworks
+    - Sonic Interaction and Sound Installations
+- Challenges in Adoption
+    - Economic Barriers
+    - Technical Complexity
+    - Cultural and Educational Gaps
+- Future Directions
+    - Artificial Intelligence and Generative Adverserial Networks
+#### Methodology and Case Study
 - Data Collection and Analysis
-#### Social Behaviours
-- Conservatism in Technology Adoption
-- Stigmatization and Social Perceptions
-#### Acoustic Technologies and Sonic Interfaces in Creative Practices
-- Artistic Value and Feasibility
-- Interactive Acoustic Environments
-- An Artistic Experiment for Capturing Acoustic Snapshots of Imaginary Spaces
-#### Finding and Discussion
-- Comparative Analysis
-- Identified Barriers and Biases
+    - Purpose and Scope
+- Artistic Experimentation
+    - Description of Proposed Artwork
+    - Human Interaction Goals
+- Technical Methods and Sound Approach
+    - Screen Based Eye Tracking
+    - Generative RIR, Interactive Environments I
+    - Spatial Audio System, Interactive Environments II
+    - Sonic Environmental Narration Endpoints
+- Data Collection Tools
+    - Eye Tracking Heatmaps
+    - User Unique Audio Narration Sequences
+    - Questionnaire
+- Analysis Framework
+    - Constant Questioning of Intuitiveness
+    - Barriers and Biases
+    - Feasibility
+#### Result and Discussion
+- Audience Feedback and Questionnaire Analysis
+- Key Themes and Observations
+- Feasibility and Artistic Potential
+- Comparison with Literature
+- Audience Engagement
+- Technological Challenges and Opportunities
 #### Conclusion
 - Implications for Artists and Developers
 #### References
