@@ -1,0 +1,1 @@
+Erkki Huhtamo is answering the doubts around interactive art about being so new and not developed enough to be a true authentic artform in his article. By giving foundational knowledge and historical base of interactive art and he present counterpoints that give the full picture of interactive art literacy.
