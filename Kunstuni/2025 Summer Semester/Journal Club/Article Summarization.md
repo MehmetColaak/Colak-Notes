@@ -1,6 +1,6 @@
 ## Touch the sound: The role of audio-tactile and audio-proprioceptive interaction on the spatial orientation in virtual scenes
 ### Keywords
-	audio-tactile, haptics, multi-modal sensory
+	audio-tactile, haptics, multi-modal sensory, audio localization
 ### Where? Why?
 
 	I came across this article while I was reading another article about auditory-tactile interfaces and narratives. The article covers more specific subject about auditory-tactile interfaces which is audio-tactile interaction on spatial orientation(localization) in virtual scenes. It uses 2 different experiments to measure level of interaction by giving user auditory and tactile stimulations simultaneously. Study focuses on auditory-haptic "localization" in the spatial domain.
@@ -15,7 +15,7 @@
 	Although the multi-modal events determined by physical rules and usually has same position in physical world, it is possible to break this rules in virtual environments to have a control and optimization over object interaction in virtual environments.
 ### Experimentations
 
-	8 participant took part. For the audio-tactile content a hair shaving machine recorded with both microphone and an accellerometer. A loudspeaker array with nine loudspeakers was used to present the acoustic stimulus. Electrotactile stimulation was used to present the vibrations. The first experiment includes 2 phases, one audio stimulus directly ahaed of the subject and following another stimulus with a different position. In each run subject was asked to state whether second event lay to the right or to the left of the first.
+	8 participants took part. For the audio-tactile content a hair shaving machine recorded with both microphone and an accellerometer. A loudspeaker array with nine loudspeakers was used to present the acoustic stimulus. Electrotactile stimulation was used to present the vibrations. The first experiment includes 2 phases, one audio stimulus directly ahaed of the subject and following another stimulus with a different position. In each run subject was asked to state whether second event lay to the right or to the left of the first.
 	In the second experiment same test was done with adding an electrotactile stimulation into test. Subjects were asked whether the position of the auditory event and the position of the tactile information coincide or not.
 ### Conclusion
 	Simultaneously presented electrotactile stimulation enlarges the localization blur and the tactile stimulation pulls the auditory source to the direction of its location. Audio-tactile interaction play an important role on the spatial orientation in virtual scenes. Therefore they should be taken into account in virtual reality applications.
