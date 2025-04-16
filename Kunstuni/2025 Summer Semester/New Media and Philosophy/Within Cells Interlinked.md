@@ -1,4 +1,4 @@
-In the original Blade Runner(1982) there was the Voit-Kompff test, which was an empathy test designed to provoke an emotional response, with the idea of catching a replicant who is not exhibiting the correct human emotions.
+In the original Blade Runner(1982) there was the Voight-Kampff test, which was an empathy test designed to provoke an emotional response, with the idea of catching a replicant who is not exhibiting the correct human emotions.
 
 ![Voight-Kompff test](Voight-Kampff.jpg)
 

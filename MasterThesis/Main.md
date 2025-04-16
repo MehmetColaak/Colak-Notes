@@ -1,87 +1,37 @@
 ## Title
 ****
-### Embracing Sphere: A Critical Approach to the Adoption of Immersive Audio Technologies in Sound Art
+### Embracing Sphere: Auditory Environmental Narration with Audio-Tactile Playback Systems
 ## Topic
-Immersive audio technologies, such as ambisonics and HRTF (Head-Related Transfer Function), aim to replicate spatial soundscapes, creating immersive auditory experiences. Despite their potential applications in gaming, virtual reality, cinema, and assistive tools for the visually impaired, the adoption of these technologies has faced barriers. These include technical challenges, high implementation costs, limited public awareness, and the need for compatible hardware and software. This research will examine the current state of 3D audio, factors limiting its broader adoption, and opportunities to accelerate innovation, particularly in enhancing storytelling and accessibility.
+Conveying a narrative through environment is a known technique in multiple media domains. Heavy reliance on visual cues, static soundscapes and easy grasp interfaces defines the limitations of current methods in environmental storytelling. Utilizing multi-modal stimuli and 3D audio volumes for enhancing environmental narration remains niche and open for new perspectives in storytelling and narration through the environment. 
 
-The thesis aims to address these gaps by integrating acoustic technologies and sonic interfaces within artistic contexts. Procedural methods will be employed to synthesize room impulse responses based on interactive acoustic parameters. Through this exploration, the thesis will evaluate the feasibility and artistic potential of using sonic interfaces as tools for creative expression.
+To explore possibilities beyond these limitations, this research explores the integration of haptic feedback and advanced acoustic modeling methods. Haptic feedback systems mostly used by video games, racing simulations and interactive art installations, are often fed by low frequency audio signals to create pulses on haptic actuators. Complementing tactile channel, Room Impulse Response (RIR) is a method is a method of capturing acoustic properties of an enclosed volume/space later to use in reverberation(specifically convolution reverbs) to reconstruct the same acoustic responses while simulating different materials. Combining these distinct modalities like tactile pulses and acoustic reconstruction offers novel ways to represent environmental snapshots purely through non-visual interfaces.
 
-To explore these social behaviours, the thesis will use a questionnaire after presenting sound art created with the technologies mentioned before. This will help reveal how these technologies are perceived, any barriers or biases to their adoption, and the overall acceptance of these immersive audio technologies.
+Building on this potential, a multi-modal stimulation scenario using simultaneous audio signal playback driven by a speaker array incorporating procedurally generated RIRs and a bass shaker (transducer) will be this thesis's foundational method for creating artificial environments and allowing the audience to perceive the world.
+
+This applied work master’s thesis will investigate the current state and the potential of such multi-modal experiences in conveying environmental information and narrative, aiming to design, implement and evaluate an interactive audio-tactile system capable of procedurally generating environmental snapshots for narrative purposes.
+
 ## Structure
-#### Summary
-#### Table of Content
 #### Introduction
-- Background, State of Art
-    - Immersion and Presence
-    - Immersive Audio Technologies
-    - Space and Audio
-- Research Questions and Objectives
-    - Benefits of Audio in Immersive Media
-    - Conservatism in Technology Adoption
-    - Stigmatization and Social Perceptions
-- Framework and Core Concepts
-    - Abbreviations and Key Terms
-    - Technologies and Concepts Overview
-#### Literature Review
-- Evolution of Audio Technologies
-    - History in Recorded Audio
-    - Theoretical Foundations of Spatial Sound
-    - Immersive Audio Standards and Frameworks
-    - Open-Source Contributions
-- Artistic and Practical Applications
-    - Immersive Audio in Media Arts
-    - Augmented and Virtual Reality
-- Artwork Examples
-    - Pioneering Sound Artists and Works
-    - Cross-Disciplinary Artworks
-    - Sonic Interaction and Sound Installations
-- Challenges in Adoption
-    - Economic Barriers
-    - Technical Complexity
-    - Cultural and Educational Gaps
-- Future Directions
-    - Artificial Intelligence and Generative Adverserial Networks
-#### Methodology and Case Study
-- Data Collection and Analysis
-    - Purpose and Scope
-- Artistic Experimentation
-    - A Glimpse from Tannhauser Gate
-    - Description of Proposed Artwork
-    - Human Interaction Goals
-- Technical Methods and Sound Approach
-    - Screen Based Eye Tracking
-    - Generative RIR, Interactive Environments I
-    - Spatial Audio System, Interactive Environments II
-    - Sonic Environmental Narration Endpoints
-- Data Collection Tools
-    - Eye Tracking Heatmaps
-    - User Unique Audio Narration Sequences
-    - Questionnaire
-- Analysis Framework
-    - Constant Questioning of Intuitiveness
-    - Barriers and Biases
-    - Feasibility
-#### Result and Discussion
-- Audience Feedback and Questionnaire Analysis
-    - Statistical Insights
-    - Expectations and Questionnaire Results
-- Key Themes and Observations
-    - Intuitiveness of Interaction
-    - Technical Challenges and Opportunities
-- Comparison with Literature
-    - Alignment with Prior Research
-    - Identified Differences
-- Audience Engagement
-    - Interactive Pattern and Behaviours
-    - Role of Artistic Expression
-#### Conclusion
-- Summary of Findings
-- Implications for Artists and Developers
-- Limitations of Research
-- Final Thoughts
-#### References
-#### Bibliography
+
+Hook: Start with the potential of multi-sensory experiences (specifically audio-tactile) in conveying environmental information and narrative.
+    
+- Problem Statement: Clearly define the limitations of current methods in environmental storytelling (e.g., reliance on visual cues, static soundscapes, lack of integrated haptics). Highlight the challenge of representing dynamic environmental characteristics (space, material) interactively.
+    
+- Research Question(s): Formulate precise questions your thesis aims to answer. Examples:
+    
+	- How can procedurally generated Room Impulse Responses (RIRs) and corresponding haptic feedback be combined to create dynamic "Acoustic and Haptic Snapshots" for environmental narration?
+	- What are effective design principles for an interactive system that generates and plays back these multimodal snapshots?
+	- How does the integration of audio and tactile feedback influence the perception and interpretation of environmental narratives in an interactive art context?
+	
+- Project Goal/Aim: State clearly what your project sets out to achieve (e.g., "To design, implement, and evaluate an interactive audio-tactile system capable of procedurally generating environmental snapshots for narrative purposes").
+    
+- Contribution: Briefly outline the novelty of your work (e.g., the specific procedural generation method, the integration approach, the application to narrative via an art installation).
+    
+- Scope and Limitations: Define the boundaries of your research (e.g., types of environments modeled, specific haptic modalities used, complexity of the narrative, scale of the user evaluation if any).
+    
+
+Thesis Outline: Briefly state what each subsequent chapter will cover.
 ## Bullet Notes
-- Acoustic Snapshots
+- Environmental Snapshots
 - Immersive Audio
-- Conservatism and Stigmatization
+- Auditory Environmental Narration
