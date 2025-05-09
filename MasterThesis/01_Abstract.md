@@ -1,8 +1,0 @@
-# Abstract
-
-## Working Text
-
-
-
-
-

@@ -62,7 +62,7 @@ This applied work master’s thesis will investigate the current state and the p
     5.2.4 Technical Performance: Latency between tactile/audio triggers, fidelity of convolution reverb simulation, procedural realism of RIRs.
 5.3 Results: Present the collected data (quantitative and/or qualitative).
 5.4 Discussion: Interpret the results in relation to your research questions and goals. What worked well? What were the limitations? How did users respond to the audio-tactile combination?
-
+xq
 #### 6 Conclusion
 6.1 Summary of Findings: Briefly reiterate the main achievements and findings of your project.
 6.2 Answering Research Questions: Explicitly address the research questions posed in the introduction based on your work.
