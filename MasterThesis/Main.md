@@ -7,7 +7,7 @@
 1.1 Research Question: How multi-modal stimulation can be utilized to enhance auditory environmental narration?
 1.2 Multi-Modality: How does the integration of audio and tactile feedback influence the perception and interpretation of environmental narratives in an interactive art context?
 1.3 Environment as a Tool for Narration: State clearly what your project sets out to achieve (e.g., "To design, implement, and evaluate an interactive audio-tactile system capable of procedurally generating environmental snapshots for narrative purposes").
-1.4 Embracing Sphere and Perception: Briefly outline the novelty of your work (e.g., the specific procedural generation method, the integration approach, the application to narrative via an art installation).
+1.4 Embracing Sphere and My Own Perception: Briefly outline the novelty of your work (e.g., the specific procedural generation method, the integration approach, the application to narrative via an art installation).
 1.5 Scope and Limitations: Define the boundaries of your research (e.g., types of environments modeled, specific haptic modalities used, complexity of the narrative, scale of the user evaluation if any).
 1.6 Thesis Outline: Briefly state what each subsequent chapter will cover.
 
