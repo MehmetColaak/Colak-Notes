@@ -93,3 +93,4 @@ The experiment consisted of nine sessions and each session was finished within 5
 A well-defined functional relationship was observed between the degree of consonance and vibration frequencies, suggesting that vibrotactile consonance can be a good metric to represent the perceptual characteristics of superimposed vibrations. The beat frequency of the envelope of superimposed vibrations was shown highly relevant to consonance perception. The subjective impressions associated with vibrotactile consonance and dissonance were smooth vibrational feeling and rough, fluttering sensations, respectively. 
 
 The experimentation also showed vibrotactile consonance perception is correlated to auditory consonance perception on the basis of the resemblance between their physical measures.
+## 

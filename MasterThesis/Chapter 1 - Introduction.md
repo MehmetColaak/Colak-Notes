@@ -1,3 +1,4 @@
+# Chapter 1 - Introduction
 Virtual environments as narrative spaces, represents a novel way to tell a story or convey a specific feeling to the audience. Unlike traditional storytelling methods that rely on delivering story through dialogue, cutscenes or text dumps; environmental storytelling operates more subtly.
 
 To effectively highlight environmental storytelling, it’s crucial to weave narrative elements seamlessly into the virtual environment that evoke emotions and encourage players to question their surroundings. The very design of virtual spaces like their size, shape, flow, connectivity and materials can convey narrative meaning. The layout of virtual environment can guide the player along a specific path, revealing information sequentially or create feelings of safety, exposure or confusion. The environment becomes a silent narrator, communicating with audience through carefully crafted, immovable details that enhance immersion and improve the narrative experience[[References#Environmental Storytelling Blogpost |1]].
@@ -82,4 +83,24 @@ The "playback system" aspect of Embracing Sphere is about creating a personal ph
 
 My artwork, therefore, aims to be a practical exploration of the ideas in this thesis. "Embracing Sphere" is designed to be a tool to investigate how these audio-tactile experiences can shape our perception of a virtual space, its materials, and the subtle narrative cues embedded within it. It’s my way of testing how powerful this multi-modality of hearing and touch can be in making environmental storytelling more engaging for an audience.
 ## 1.5 Scope and Limitations
+Haptic feedback refers to feedback perceived through the sense of touch. The haptic system uses sensory information derived from mechanoreceptors and thermoreceptors embedded in the skin together with mechanoreceptors embedded in muscles, tendons and joints[[References#Haptic Perception|7]]. 
+
+This research narrows its focus to vibrotactile feedback generated specifically by Linear Resonant Actuators (LRAs). Consequently, other forms of haptic interaction, such as force feedback, thermal feedback, or electrovibration, are outside the scope of this study. LRAs are particularly suitable for vibrotactile applications due to their operational principles, which are similar to those of loudspeakers and voice coil actuators[[References#Audio-Tactile Rendering|8]], allowing for conventional audio recording practices viable on haptic feedback content creation. A further exploration can be found in subchapter 2.4 Haptics and Perception, where vibrotactile hardwares and human perception capabilities are discussed in detail. 
+
+The study is limited by the specific operational range (e.g., frequency, amplitude) of the LRAs employed. Different LRAs possess varying performance characteristics and the chosen model may not represent the full spectrum of possible vibrotactile sensations. 
+
+Another limitation is individual differences in vibrotactile sensitivity and perception thresholds among participants. While subchapter 2.4 will explore general human perception, this study does not control for all individual variabilities(age, skin condition, prior haptic experiences etc.).
 ## 1.6 Thesis Outline
+With the last paragraphs of Chapter 1 - Introduction, this chapter aims to give an overall look for the thesis structure, topics that will covered and brief summary of the rest of chapters.
+
+Chapter I - Introduction, established the research context, presented the central research questions, inspirations and personal insights driving to this work. Later defined the scope and limitations of the investigation and provided this outline of the thesis structure.
+
+Chapter 2 - Background and Related Works to Embracing Sphere, will offer a comprehensive review of existing literature and foundational concepts crucial to this research. This includes defining environmental narration and exploring its existing methods across various mediums, before focusing on auditory environmental narration. It will then investigate the principles of room acoustics, explaining Room Impulse Responses (RIRs), their measurement, the mathematical concept of convolution and its application in digital audio and sound art. Furthermore, it will provide a detailed review of haptics, different feedback modalities, fundamental aspects of human tactile perception and examples of haptic usage in diverse fields. Finally, the chapter will explore audio-tactile interaction, defining the concept and examining its application in contemporary media.
+
+Chapter 3 - System Design and Methodology, will detail the conceptual framework and systemic design of the proposed interactive system. It will cover the methodology for procedural Room Impulse Response (RIR) generation, the design of the audio and haptic playback systems, the interaction design principles and the intended narrative structure built by the system.
+
+Chapter 4 - Implementation, will describe the practical realization of the system. This chapter will cover the specific hardware setup, the software development process and tools utilized, the materialization of the research into an interactive art project and will discuss key challenges encountered during implementation and their solutions.
+
+Chapter 5 - Evaluation, will focus on evaluating the developed system. It will outline the evaluation goals, proposed playback system's effectiveness in conveying environmental narratives and the impact of multi-modal stimulation, present the collected results.
+
+Chapter 6 - Conclusion, will summarize the entire research endeavor. It will directly address the research questions, acknowledge the limitations of the study.

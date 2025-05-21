@@ -1,0 +1,19 @@
+### Keywords
+	sound design, immersive audio, spatial audio, game audio
+### Where? Why?
+I choose this article to get a written practical resource for my proposed artwork. To give technical and practical perspective while I talk about my artwork I thought this article would help me to conceptualize and validate my approach.
+### Introduction
+The research article investigates current approaches and techniques used by game audio professionals in the creation of audio content for immersive sonic environments in games.
+### Game Audio Practices
+This part categorizes and giving direct descriptions of different game audio content practices. From traditional music compositions to interactive sound design and mixing practices and concepts like immersion, have been investigated and information given about usage and need.
+### Methods
+Semi-structured interviews, analyzed using Thematic Analysis. They identified common themes and trends from what the pros said in the interviews.
+
+Compared to similar entertainment mediums like film, the field of video game audio is young and quickly evolving, leading to a gap in knowledge of current practices. To address this gap, this project employs qualitative semi-structured interviews to gather up-to-date and industry relevant first-hand information. This project utilises "thematic analysis" to explore several benefits, namely its flexibility and applicability to diverse data sources. As the direction of the project will be shaped by the outcomes of the interviews, flexibility and applicability to diverse data sources are of particular value. 
+### Findings & Conclusion
+Findings and Conclusions are collected answers and observed thematic analysis over those interviews covering these 5 main topics:
+- **Middlewares:** Audio middleware has become a staple in modern game audio production, with industry practitioners emphasising its ubiquity. Middleware is not a strict requirement for a game project, but it is likely to increase the speed and ease of which audio can be implemented.
+- **Tools:** Practitioners highlight how tools not only guide initial creative decisions but also define the possibilities and limitations of what can be achieved in game audio. The distinction between proprietary engines and established middleware also impacts audio development, with pro- prietary tools generally offering greater customization for a project. Some practitioners noted that the design of game audio tools can be programmer-centric, which can complicate audio-centric work.
+- **DSP:** Higher processing capabilities on platforms like PC allow for expansive DSP use, whereas platforms with limited processing, such as the Nintendo Switch, necessitate cautious DSP application to manage resources effectively. The scope of the project also influences DSP management.
+- **Mixing:** Video game audio mixing significantly departs from music and film mixing approaches, emphasising the use of adaptive hierarchies and bussing structures to control playback, instead of manual track balancing. This method allows sound elements to interact with the game world dynamically, responding to player actions and environmental changes, and offering an evolving audio experience unique to gameplay.
+- **Immersion:** The concept of immersion was described by practitioners as having three components: suspension of disbelief, flow state, and emotional engagement. Practitioners tended to place unequal emphasis on these components, possibly a reflection of the type of projects they work on frequently, as different types of games lean more on some components than others.
