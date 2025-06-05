@@ -10,6 +10,7 @@ Purves D, Augustine GJ, Fitzpatrick D, et al., editors. Neuroscience. 2nd editio
 McErlean, K. (2018). Interactive Narratives and Transmedia Storytelling: Creating Immersive Stories Across New Media Platforms (1st ed.). Routledge.
 #### How Dualshock 2 Vibration Motors Work
 https://electronics.howstuffworks.com/ps23.htm
+Tyson, J., _How PlayStation 2 works_. HowStuffWorks. Retrieved June 3, 2025, from [https://electronics.howstuffworks.com/ps23.htm](https://electronics.howstuffworks.com/ps23.htm)
 #### Haptic Perception
 S. J. Lederman and R. L. Klatzky, “Haptic Perception: A Tutorial,” Attention, Perception, & Psychophysics, vol. 71, no. 7, pp. 1439–1459, 2009.
 #### Audio-Tactile Rendering
