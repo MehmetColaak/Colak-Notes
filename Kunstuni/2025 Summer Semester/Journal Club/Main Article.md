@@ -1,6 +1,6 @@
 # Embracing Sphere: Auditory Environmental Storytelling with Audio-Tactile Playback Systems
 ## Abstract
-Conveying a story through the environment is a known technique in multiple media domains. Blood stain under the door, footstep trails on snow and broken chains next to a beware dog sign; all those flash scene descriptions are an example for environmental storytelling. Heavy reliance on visual cues defines the limitations of current methods in environmental storytelling. Utilizing multi-modal stimuli and 3D audio volumes for enhancing environmental storytelling remains niche and open for new perspectives in storytelling and narration through the environment. 
+Conveying a story through the environment is a known technique in game design and theme park train rides. Blood stain under the door, footstep trails on snow and broken chains next to a beware dog sign; all those flash scene descriptions are an example for environmental storytelling. Heavy reliance on visual cues defines the limitations of current methods in environmental storytelling. Utilizing multi-modal stimuli and 3D audio volumes for enhancing environmental storytelling remains niche and open for new perspectives in storytelling and narration through the environment. 
 
 This research explores the integration of haptic feedback and acoustic modeling methods. Haptic feedback systems mostly used by video games, racing simulations and interactive art installations and haptic signals are mostly vibrations that are transferred by low frequency audio signals to create pulses on haptic actuators. Complementing tactile experience, Room Impulse Responses (RIR) utilized as a method of capturing acoustic properties of an enclosed volume/space later to use in reverberation(specifically convolution reverbs) to reconstruct the same acoustic responses while simulating different materials. Combining these distinct modalities such as tactile pulses and acoustic simulations offer a novel way to represent environmental snapshots purely through non-visual interfaces.
 
@@ -143,11 +143,37 @@ This "what, where and how" taxonomy provides a conceptual tool for environmental
 
 As shown in the Figure 1.09 rumble strips designed to alert drivers by creating vibrations and noise when a vehicle goes out from its intended lane or crosses the edge of the road. Stimulation from a rumble strip side of the road not just indicating physical position or a road surface information, it's an immediate warning. 
 
-The sensation isn't a random patch of bad road; it's a deliberately engineered, rhythmic pattern. This pattern connects the what (the ribbed texture) and the where (the edge of the lane) to create a temporal meaning: "You are currently in the process of making a mistake." The "how" pathway interprets this sequence as a cause-and-effect event, because you are drifting, you are feeling this vibration. In a structured narrative context, this type of haptic stimulation can be utilized for environmental storytelling.## Conceptual Framework
-### Hardware Devices
-### Software Programs
+The sensation isn't a random patch of bad road; it's a deliberately engineered, rhythmic pattern. This pattern connects the what (the ribbed texture) and the where (the edge of the lane) to create a temporal meaning: "You are currently in the process of making a mistake." The "how" pathway interprets this sequence as a cause-and-effect event, because you are drifting, you are feeling this vibration. In a structured narrative context, this type of haptic stimulation can be utilized for environmental storytelling.
+## Conceptual Framework
+This section details the technical and practical design of the Embracing Sphere installation. It describes the specific hardware and software components chosen and explains how they integrate to create an audio-tactile environmental storytelling experience.
+
+The Embracing Sphere installation is built into a physical car seat. When a user is seated, the system plays a pre-authored experience composed of synchronized audio and haptic events. The following subsections detail the hardware and software components that sets the installation.
+### Hardware Components
+This specific installation is going to be exhibited in Ars Electronica Festival 2025. A Raspberry Pi5 serves as the main computer for the installation. It was selected for its processing power, compact form factor and GPIO capabilities, which are necessary for control and mobility, making the system suitable for exhibition environments like Ars Electronica.
+
+We mentioned that sound and haptic modalities luckily can be expressed with vibrations and  designing audio files to drive both headphones and bass shakers chosen because of ease of composition and rendering. Audio files for bass shaker mostly synthesized simpler low frequency waves and some of complex ones are recorded with a powerful contact microphone called Lom Geofón has used to capture natural rumbles in the environment. Used softwares in content creation for the system will be covered in the next chapter.
+
+The audio channels that drives headphones requires 2 channels to play binaural audio which isolates the listener within the sonic environment and another 2 channels required to drive bass shakers. These bass shakers translates low-frequency audio signals into physical vibrations felt by the user. 
+
+In total at least 4 channels needed to create a stable playback system that drives both auditory and haptic parts of the installation. For four independent channels of audio output, ESI GigaPort EX sound cart has chosen. This sound cart has 8 individual audio outputs and it is class compliant, available to use in linux systems like Raspberry Pi5.
+
+These 8 analog outputs are line level -10 dBV RCA outputs which is enough to drive headphones but lack of power to drive bass shakers that needs 50w of energy to work. To amplify the haptic channels, Thomann t.amp S-100 MKII selected.
+
+A light sensor used, acts as the trigger, making the start of the experience automatic and seamless for the user. Connected to the GPIO pins of Raspberry Pi5, embedded logic detects if the user has sit and initialize the experience from start or stops the playback.
+
+Several softwares used to compose the content and control the hardwares, covered in the next chapter.
+### Software and Content Workflow
+Reaper is used for the pre-production stage on editing and designing sound, creating the binaural renders for the headphones and synthesizing or editing the specific haptic audio files. Native and additional tools utilized like IEM Suite for spatialization of the content designed.
+
+Pure Data selected for the managing of the logic of the playback system, handling the multi-channel playback, processing procedural RIR system and routing the correct audio streams to the corresponding outputs of the ESI GigaPort EX. Its compatibility with Linux and class-compliant audio interfaces makes it a viable choice for a Raspberry Pi-based system.
+
+Audio files for headphone channels are standard, full-bandwidth 48kHz 24bit ".wav" files (20 Hz - 20 kHz) intended for hearing. They contain the environmental sounds, ambiences, and narrative cues and are spatially mixed using binaural techniques.
+
+Audio files for haptics are also 48 kHz 24bit ".wav" files but they are low frequency content(4 Hz - 250 Hz) designed not to be heard but to be felt. These files either synthesized with basic subtractive synthesis techniques or recorded with Lom Geofón.
 ## Future Works
+Future development of the "Embracing Sphere" project could expand upon its current foundation in several key areas. The haptic feedback could be enhanced by increasing the number of haptic actuators to provide more detailed spatial feedback across the user's body, moving beyond the current two-channel system. On the software side, the pre-authored narrative could be replaced with a real-time procedural generation system. This would allow for dynamic creation of haptic and auditory events in response to user interaction or other inputs, increasing the system's interactive depth.
 ## Conclusion
+This research explored the potential of audio-tactile systems to create immersive environmental storytelling experiences, moving beyond the traditionally vision-dominated paradigm. By integrating haptic feedback with spatialized audio, the "Embracing Sphere" installation was designed and implemented as a practical case study. "Embracing Sphere" serves as a proof-of-concept that multi-modal feedback, specifically the interplay of sound and touch, can effectively convey environmental details, spatial awareness and narrative cues, offering a richer, more embodied way for an audience to experience a story.
 ## References
 1. Dolinski, B. (n.d.). _Environmental storytelling in video games_. Game Design Skills. Retrieved June 3, 2025, from https://gamedesignskills.com/game-design/environmental-storytelling/
 2. Cachón-Ramón, D., Pozo-AUñón, R. A., & Prados-Peña, M. B. (2023). Unravelling the complexity of the Video Game Industry: An integrative framework and future research directions. _Telematics and Informatics Reports_, _12_, 100100.
