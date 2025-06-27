@@ -102,9 +102,54 @@ The method uses tone bursts (or filtered pistol shots) to excite the enclosure(r
 
 These impulse response recordings later can be used to reconstruct a virtual environment with the same reverberation curves as captured room with a mathematical operation called convolution. An anechoic(no reflections) sound is convolved with an RIR and this mathematical process applies the room's acoustic snapshot to the sound. The convolution effectively embeds the reflections and reverberation captured in the RIR to the original sound.
 ### 2.2.1 Room Impulse Response Measurement Methods
-*"Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom. -Stephen R. Covey\cite{Sonic Interactions in VE}"*
+*"Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.\cite{Sonic Interactions in VE}"*
+
+The quote above is highly controversial because it has been referred to an Austrian neurologist and psychologist, Viktor Frankl by Stephen R. Covey in his book called The Seven Habits of Highly Effective People but quote that referred to Frankl's book, Man’s Search for Meaning hasn't got any line that includes the quote. Although I wanted to share this quote as a poetic mood setter for this chapter. 
+
+From an artistic perspective, Embracing Sphere refers to this metaphorical concept of relation between stimulus and response of space. Either directly or metaphorically it is powerful representation in spatial perception. Embracing Sphere is about creating an environments/spaces that are capable of telling stories. These spaces should contain both stimulus and response. Although in Embracing Sphere audience doesn't have power of choice, space has because space contains a lot to tell. The response of the space, grows and establish its freedom.
+
+Acoustics, mathematics, methodologies around it can be covered so deep in details but in the end all of these descriptions and formulas exist in my research to support my artwork to understand the background and design choices of the Embracing Sphere. Therefore RIRs are important in my artwork to give acoustic and spatial context to the audience. It is useful to render the depth and the aural character of the environment into audio.
+
+In previous sections we covered room impulse response description in surface level. It is a captured audio file that contains acoustics space characteristics such as frequency changes, reverberation decay and length.
+
+There are several practical ways to capture RIR of a room. The easiest one is popping a balloon in the desired room and recording the balloon pop. This method is practical but not much accurate and it is not easy to recreate again because every balloon pop sound parameters can be differ in frequency-wise\cite{}. The more accurate method is sine sweep technique\footnote{\url{https://youtu.be/1egKAtC16e8?feature=shared}}, which includes 1 reference sine wave sweep audio (5-10 seconds long) that starts from 20Hz and sweeps every frequencies until 20kHz\cite{}. In this method the room is acoustically excited by this sine wave and with a microphone the room response recorded then processed with a mathematical process called deconvolution that extracts RIR with subtracting reference sine sweep from reverberant recording.
+
+![IR_Balloon_Pop](Images/IR_Capture_Balloon_Pop.png)
+
+The visual above is  a recording session in 2021 when I was working as an audio designer in a company called Vadi Sound. In that frame we were capturing RIR with balloon popping in an old house in Balat, Istanbul. The house specifically interesting for capturing RIR because it was one of the few historical wooden houses remain in the Istanbul from early Turkish Republic times. In that situation we hadn't got a high quality full range speaker to excite the room so we choose to pop a balloon at several places in the room to capture as many different positions RIR.
+
+![IR_Capture_Sine_Sweep](Images/IR_Capture_Sine_Sweep.png)
+An RIR capturing session that using sine sweep method can be seen in the figure above. The specific setup uses 2 omnidirectional microphone positioned in the A/B stereo miking technique()\cite{} and 1 binaural microphone to capture studio room impulse response. 
+
+![Room_RT](Images/Room_RT.png)
+Either method works in basic principle shown in the figure above. A source that exciting the room and a capturing point that captures the room's acoustic character. From an artistic or design perspective we can see this process as taking an auditory snapshot of the room.
+
+
+
+![IR_Comparison](Images/IR_Comparison.png)
 
 ### 2.2.2 Convolution in Math and Digital Audio
+Convolution is a mathematical operation that combines two functions to produce a third function. This new function expresses how the shape of one function is modified by the other. In simple terms, convolution tells us how one signal changes when it passes through a system described by another signal. The convolution algorithm is often interpreted as a filter, where the kernel filters the feature map for certain information\cite{}.
+
+We can say that convolution is fancy multiplication. It is important in physics and mathematics as it defines a bridge between the spatial and time domains and the frequency domain through the convolution theorem. Convolution is essentially used in computer graphics, digital signal processing and lately in machine learning algorithms.
+$$(f \ast g)(t)=\int_{-\infty}^{\infty} f(\tau) g(t-\tau) d \tau$$
+The above formula is the formal definition of convolution operation. Instead of starting a calculus lecture, we can present a metaphoric example to deepen our understanding:
+
+Let's say you are running a restaurant. In this restaurant you have a fixed menu and your kitchen uses 2 eggs for one meal. In monday rush hour, 10 meals are ordered in the first hour, 11 in the second, and 12 in the third. How many eggs did you used? It's simple multiplication. 
+$$(2\cdot10)+(2\cdot11)+(2\cdot12)=66$$
+The answer is 66 but in Tuesday your chef added a dessert that requires an egg to make. Desserts are getting served after 1 hour of each meal. How many eggs you use for each hour? This is now a complex problem because the eggs amount overlaps after first hour.
+
+First hour is simple you prepare initially 10 meals with 2 eggs each $$2\cdot10=20$$Then the next hour you have to prepare 11 meal but also 10 desert for the visitors from first hour $$(2\cdot11)+(1\cdot10)=32$$The third hour after your last visitors came you have to prepare 12 meals and additional 11 desserts for the second hour visitors. $$(2\cdot12)+(1\cdot11)=35$$
+And you overtime for the last visitors and serving 12 desserts. $$1\cdot12=12$$
+To summarise all the details, 
+- The Input (Orders): `[10 11 12]`
+- The Plan (First meal, next hour dessert): `[2 1]`
+- The Result (Total eggs used per hour): `[20 32 35 12]`
+This calculation is an high level example for convolution operation. In digital audio with the lists that has at least 44100 samples per second\cite{}, much more convolution operations needed to convolve an input audio and a kernel impulse response. 
+
+Convolution is a key tool for processing sounds. It is used to apply the characteristics of one sound (such as the acoustics of a room or the response of a speaker) to another sound (like a musical recording or a voice).
+
+Convolution is also used in digital filters, such as equalizers and effects and in spatial audio to simulate how sound arrives at the ears from different directions. For example, by convolving audio with a _head-related transfer function_ (HRTF), we can make sounds appear to come from specific locations in three-dimensional space\cite{}.
 ### 2.2.3 Room Acoustics in Sound Art
 ## 2.4 Haptics and Perception
 
