@@ -124,10 +124,23 @@ An RIR capturing session that using sine sweep method can be seen in the figure 
 ![Room_RT](Images/Room_RT.png)
 Either method works in basic principle shown in the figure above. A source that exciting the room and a capturing point that captures the room's acoustic character. From an artistic or design perspective we can see this process as taking an auditory snapshot of the room.
 
-
+RIRs are artistically useful for virtual aural architecture. In real life architecture uses volumes to evoke intended emotion or paradigms. Some spaces can evoke feeling about privacy or loneliness, others can invite for social cohesion or some space can establish an hierarchy between different roles in the society\cite{}. Artistically I see enclosed spaces and its response as an actor in my story. Same dialog or sonic events can convey many different meanings and feelings according to environments relation with the stimulation.
 
 ![IR_Comparison](Images/IR_Comparison.png)
 
+To explain frequency difference and reverberation time affect in any sonic event, the 2 completely different character RIR waveform and spectrogram graphic shown above. As we can see at the left column in the graph, these 2 RIR files has quite different in length and density. 
+
+First row is from a small room RIR shown above with a picture of mine holding a balloon. The length of this small room RIR is around 500ms which indicates small volume and highly absorbent environment with carpets on the floor, many cushions and curtains. 
+
+The second row is from architecturally and historically famous Hagia Sofia in Istanbul built in 6th century. The Byzantine church Hagia Sophia transformed into a mosque after conquest of Constantinople (modern day Istanbul) by Ottoman Empire in 1453 and functioned as a mosque until it transformed into a secular museum with the political and social reforms made in 1935 under Mustafa Kemal Atatürk then reverted back into a mosque in 2020 by Turkish government to support their religious ideologies and symbolic political endeavors\cite{}. This iconic wonder has stood against time and many diverse cultural influences. 
+
+To study the acoustics of old Byzantine churches and mosques built by famous architect Sinan (known as Mimar Sinan) the CAHRISMA project (Conservation of the Acoustical Heritage by the Revival and Identification of the Sinan’s Mosques Acoustics) started in 2000\cite{}. In this project, sine sweep technique used, a omnidirectional loudspeaker emits a sinusoidal sweep signal in the Hagia Sophia and the response of the environment is simultaneously recorded with a microphone. The sweep response is then deconvolved with the reference sweep signal.
+
+The RIR of Hagia Sophia then the analyzed and full acoustic model built in an acoustic software called ODEON\cite{}. This model can simulate auralization of any anechoic sound inside Hagia Sophia in different positions and the aural difference between Hagia Sophia as a mosque (with carpet floor and wooden panels with Arabic inscription) and Hagia Sophia as a church (mainly marble floor, stone walls)\cite{}.
+
+As we see the shown in the figure above Hagia Sophia's reverberation time is much longer than than our small room, around 6-8 seconds. The frequency response of both of the examples also shown in the figure \ref{}. The frequency response also depends on volume, absorption coefficient and affects the heard sound dramatically. High frequencies are easier to absorbed by air and surfaces\cite{} in the room and this can be seen in the figure \ref{} as a colorful slope in the spectrogram panels in the right column.
+
+In artistic view, ability to snapshot an environment and using for creating virtual environments highly interesting and useful for my perspective. Using RIRs to develop such virtual environments require a specific signal processing called "convolution". The next section will cover the practical mathematical description of convolution and its capabilities in digital audio.
 ### 2.2.2 Convolution in Math and Digital Audio
 Convolution is a mathematical operation that combines two functions to produce a third function. This new function expresses how the shape of one function is modified by the other. In simple terms, convolution tells us how one signal changes when it passes through a system described by another signal. The convolution algorithm is often interpreted as a filter, where the kernel filters the feature map for certain information\cite{}.
 
@@ -149,10 +162,189 @@ This calculation is an high level example for convolution operation. In digital 
 
 Convolution is a key tool for processing sounds. It is used to apply the characteristics of one sound (such as the acoustics of a room or the response of a speaker) to another sound (like a musical recording or a voice).
 
-Convolution is also used in digital filters, such as equalizers and effects and in spatial audio to simulate how sound arrives at the ears from different directions. For example, by convolving audio with a _head-related transfer function_ (HRTF), we can make sounds appear to come from specific locations in three-dimensional space\cite{}.
-### 2.2.3 Room Acoustics in Sound Art
-## 2.4 Haptics and Perception
+Convolution is also used in digital filters, such as equalizers and effects and in spatial audio to simulate how sound arrives at the ears from different directions. For example, by convolving audio with a _head-related transfer function_ (HRTF), we can make sounds appear to come from specific locations in three-dimensional space\cite
 
-### 2.4.1 Human Tactile Perception
-### 2.4.2 Usage of Haptics
-## 2.5 Audio-Tactile Interaction
+![Convolution_Result](Images/convolution_result.png)
+
+The visual explanation of convolution has shown in the figure \ref{}, where an anechoic voice signal and RIR from Hagia Sophia signal processed with convolution and the result indicated in the second row. The aural effect of convolution makes us to perceive singing voice is happening in a big reverberant church instead of an anechoic chamber.
+
+Embracing Sphere utilizes this process to procedurally generate virtual acoustic environments and embed already existed narrative into various virtual spaces. Procedurally generating new snapshots of imaginary spaces that serves as environment which tells story. Procedural generation and the system behind will be covered in detail in Chapter 3 and 4.
+
+Deriving from the technical perspective of acoustics and artistic approach with this acoustic technologies, in the next section usage of the room's acoustics as both medium and subject will be covered with a case study process-based art called "I am Sitting in a Room" from renown sound artist Alvin Lucier.
+### 2.2.3 Room Acoustics in Sound Art
+“I am sitting in a room different from the one you are in now.
+I am recording the sound of my speaking voice and I am going to play it back into the room again and again until the resonant frequencies of the room reinforce themselves so that any semblance of my speech, with perhaps the exception of rhythm, is destroyed.
+What you will hear, then, are the natural resonant frequencies of the room articulated by speech. I regard this activity not so much as a demonstration of a physical fact, but more as a way to smooth out any irregularities my speech might have.” - Alvin Lucier* 
+
+The text above is from a sound art piece "I am Sitting in a Room". This work is widely recognized in experimental music and sound art scene as one of the most important pieces in the history of minimalist sound art\cite{}.
+
+The artwork follows a simple iterative process. Lucier records himself reading the text at the start of this chapter, explaining exactly what is going to happen in the performance. In the iterative process, Lucier re-records this recording by playing back in a room with a speaker and a microphone. This process repeats over and over again, with each new iteration contains the previous recording and the acoustic interaction of the room\cite{}.
+
+The room acts like a filter, emphasizing certain frequencies that match its natural resonances (modal frequencies of the room\cite{}) while reducing others. With each iteration, Lucier’s words become more blurred and the room’s acoustic characteristics become the leading aspect of the performance. Eventually, Lucier's speech transforms into pure tones that reveal the acoustic signature of the space itself. The transformation happens gradually in 45 minutes of tape\cite{}. 
+
+This approach turns the space into an active participant in the composition, rather than an empty container for sound. It highlights our environments physical role in our artistic output. This concept has inspired many artist to consider the acoustic properties of spaces as a factor in their works\cite{}.
+
+My inspiration that i derived from I am sitting in a room, was one of the driving forces in my research about auditory environmental storytelling. After I found out this artwork and took my time to digest the composition, I figured out that our surrounding environments has their own character and affect over the information we constantly perceive. This concept of environment as a narrator/actor has been utilized in cinema and video games but developing environmental storytelling without visuals or semantic structure intrigued me most. Thus Embracing Sphere promotes the space into main narrator role, through auditory or tactile sensory modes.
+
+In summary the acoustic perception is important in Embracing Sphere. Next sections are going to cover haptics and human vibrotactile perception, detailed around Embracing Sphere and why haptics are an efficient sensory mode on perception and cognition.
+## 2.3 Haptics and Vibrotactile Perception
+Spatio-temporal narration can be done with many different sensory modalities but auditory and somatic senses are fundamentally need a temporal ground to be perceived and has capabilities on conveying spatial cues\cite{}. The temporal ground is basically the time required for our perceptual and cognitive systems to fully evaluate a stimulus\cite{}. In auditory medium we distinguish relative pitch, volume, amplitude, distance mostly through this temporal information and with this information we interpret the environment we stimulated by thus a spatial meaning created.
+
+In haptics (somatic system) the human perception behavior is similar in many ways and the benefits of somatic stimulus on interpreting an environment is quite the same with the benefits of the auditory stimuli\cite{}.
+
+Both of them can be studied and examined with same scientific subject "waves" because fundamentally both of them transferred via vibrations\cite{}. Some of the auditory concepts can be perceived with somatic system simultaneously such as rhythm perception\cite{}.
+
+For Embracing Sphere, I intentionally chose the auditory and haptic modalities to use the ability of creating contrasts and harmonies within the same scenery. In my perspective, haptic stimulus mostly interpreted as intimate and close in distance. In the meantime auditory perception is the best way to convey the distance and localization, even better than vision because it's not constrained by our peripheral vision.
+
+If you imagine my craft as a painter, I have ability to draw depth into my artwork much more efficient with audio-tactile stimulus.
+
+To use this wide palette, this section: Haptics and Vibrotactile Perception, is going to investigate human haptic capabilities and benefits, later we are going to use this knowledge to create more detailed virtual environments and in the ultimate objective, to convey better environmental storytelling.
+### 2.3.1 Overview of Haptics
+The somatic system can be subdivided into three elements: kinesthetic, visceral, and cutaneous. Kinesthetic sensation uses signals from proprioceptors in the joints, muscles, and tendons to provide feedback to the brain on the position and forces within segments. Similarly, visceral sensation uses receptors in the abdomen. Cutaneous sensation consists of a combined response of four types of nerve endings in the skin(Mansfield, 2005). The haptic system uses sensory information derived from mechanoreceptors embedded in the skin, muscles, tendons and joints(Lederman, 2009).
+
+Haptic interaction can be stimulated by different devices but such as thermal feedback and electro-vibration are outside the scope of this study thus a vibrotactile device chosen for this research purpose. These vibrotactile devices are similar to those of loudspeakers and voice coil actuators(Remache-Vinueza et al., 2021), allowing for conventional audio recording practices viable on haptic feedback content creation.
+
+![Figure 1.08](Images/vibrotactile_bass-shaker.jpg)
+**Figure 1.08:** Voice coil actuator, vibrotactile device, Dayton Audio BST-1.
+
+The sensory system is a network that enables your body to receive information from the environment and its own internal state, converting stimuli into signals for the brain to process. Human sensory system doesn't just process this sensory information as a single stream; it organizes it to answer fundamental questions about the environment(Reed et al,. 2005). Research in sensory neuroscience suggests a fundamental distinction in how the brain processes sensory information framed as "what" an object(disturbance) is versus "where" it is located.
+
+How do you feel the difference between rough stone, resonant wood, or soft earth? This relates directly to identifying the "what" of the surrounding environment. The "where" pathway provides spatial information, helping us understand the location of a stimulus in relation to our body and within the environment. The location of a distant explosion felt through the floor, or the feeling of being in a small, enclosed space versus an open one? This is related to identifying "where" information.
+
+Within the study that explores environmental storytelling through audio-tactile stimulation, we can extend this framework with a third component, "how". This component can include "cause and effect" relation into our sensory perception and cognition. Where "what" and "where" components answer material and spatial questions, "how" components can answer temporal questions derived from the first two components. Focusing on a more interactive concept of "event" rather than a static stimulation characteristics.
+
+This "what, where and how" taxonomy provides a conceptual tool for environmental storytelling, thus embedding temporal relations into the environment, moving beyond simple rumbles to convey specific information about an environment's materials, spatial layouts and past/ongoing events.
+![Figure 1.09](Images/rumble_strips.jpg)
+**Figure 1.09:** A visual shows road rumble strips.
+
+As shown in the Figure 1.09 rumble strips designed to alert drivers by creating vibrations and noise when a vehicle goes out from its intended lane or crosses the edge of the road. Stimulation from a rumble strip side of the road not just indicating physical position or a road surface information, it's an immediate warning. 
+
+The sensation isn't a random patch of bad road; it's a deliberately engineered, rhythmic pattern. This pattern connects the what (the ribbed texture) and the where (the edge of the lane) to create a temporal meaning: "You are currently in the process of making a mistake." The "how" pathway interprets this sequence as a cause-and-effect event, because you are drifting, you are feeling this vibration. In a structured narrative context, this type of haptic stimulation can be utilized for environmental storytelling.
+### 2.3.2 Human Tactile Perception
+This section will cover human response to haptic stimulation, detection thresholds of vibrotactile stimulation in comparison with auditory perception. The questions such as:
+- What is the detection thresholds of vibrotactile stimulation? 
+- How vibrations effect material texture feeling of an object?
+- How whole body vibrations affect our feeling?
+- How vibration amplitude, frequency and frequency pitch intervals effect cognition?
+- Which body parts or positions is effective in haptic stimulation most?
+- How audio-tactile stimulation is effecting our localization capabilities?
+These questions introduced in the context of Embracing Sphere to basically have a certain knowledge ground while crafting/designing content for Embracing Sphere. As ultimate goal is to convey an environmental storytelling through audio-tactile interface, it is crucial to explore and study haptics in detail. 
+
+First answer defines tangible human limits and scales most effective playground for vibrotactile experience. Detection threshold of vibrotactile stimuli varies with frequency, transmission position and measurement conditions. Human response to vibration is multidisciplinary topic that involves many science such as biology, psychology, physics and biomechanics\cite{}.
+
+People are primarily exposed to vibration either localized or vibration that affects whole body\cite{}. We experiencing our surroundings through these 2 different vibration ways. The question, "What is the required magnitude of a vibration for it to be perceived?" has to be restructured as "What is the required magnitude of a vibration in each frequency domain for it to be perceived by hand and whole body?". This restructuring embeds more accurate investigations in human response to vibration, assemble more useful data for Embracing Sphere. In many researches\cite{}\cite{}\cite{}, vibrotactile sensitivity of hand is highest (lowest threshold) at mid-range frequencies (40-150Hz) and decreases (threshold increases) at very low and very high frequencies (below 20 and above 400).
+
+FIGURE
+
+Whole body vibrations are important because humans are used to perceive whole vibrations in situations like being a passenger or driver in vehicles such as cars, trucks and helicopters; experiencing massive motions such as earthquake and waves in the sea\cite{}. Whole body vibration is a vibration that affects the whole body, perceptive result of a stimuli in brain is a sum of every somatic sensors of our body\cite{} and it may make us feel diverse feelings from nausea, sickness to refinement and rigidity\cite{}.
+
+According to researches\cite{} perceived quality of an instrument is slightly affected by the vibration level of an instrument and according to other studies\cite{}\cite{}\cite{} vibrotactile perception of musical concepts (rhythm, pitch, melody cognition) is quite similar to auditory perception.
+
+In the Audio-tactile Rendering experiment\cite{}, tactile renderings and perceptive effects on different type of auditory concepts such as rhythm, pitch, melody, timbre and loudness explored and in the Consonance of Vibrotactile Chords experiment\cite{}, musical theory involved in to express musical feelings of consonance and dissonance via vibrotactile interfaces. Both experiments are highly related with my research and Embracing Sphere.
+
+According to study, tactile rhythm perception explained in a basic way of filtering the music signal and using filtered signal as an exciter for an actuator. Rhythm is described as pattern of pulses in discrete time and rhythm as a musical feature can be perceived by multiple sensory channels such as visual, auditory, and touch. 
+
+Pitch perception with vibrotactile stimuli is a complex task as touch has frequency perception limitations. Simplest way is to translate pitch and loudness to vibrotactile stimuli, using speakers or VCAs which directly convert pitch to frequency and loudness to intensity of vibrations. However, frequency response of these actuators overpass skin perception thresholds we described, because of that information embedded in high-frequency bands (i.e., over 1000 Hz) might be lost.
+
+Melody builds up as a suitable combination of pitch changes over time. Therefore, most of the limitations for pitch conversion also apply to melody.
+
+Timbre allows the listener to differentiate between tones played from one or another musical instrument. Timbre relies on the frequency content called "overtones" (i.e., spectral content) of audio signals and overtones are frequencies of sound that are higher than the fundamental frequency of a vibrating object, which in a higher registry fundamental tone, an overtone series may start from higher than 600Hz. Therefore tactile translation of timbre represents a challenge.
+
+The concepts derived from music theory and composition can be utilized for creating abstract but effective audio-tactile scenes where meaning is not so direct but more intuitive.
+
+With an experimentation for localization of an event that perceived by both haptic and auditory senses create an illusion called ventriloquist effect\cite{}. The sum experience of simultaneous audio and tactile stimulation is going to covered in next section but while composing an audio-tactile experience, these perceptive concepts and illusions has to be taken into account. Being able to author feelings and embed meaning utilizing this concepts is a novel way of conveying a story in multimedia, in my perspective.
+### 2.3.3 Haptics in Media Arts and Video Games
+Both in media art scene and video game industry, immersion is occasionally an important subject. This section will cover several case studies in such domains that utilizing haptic feedback to translate an information, feeling or meaning.
+
+**Case Study: Emoti-Chair**
+The Emoti-Chair is an audio-tactile display designed to translate music, speech, and environmental noises into physical vibrations that can be felt on the body. This system is aimed at improving music accessibility for deaf and hard of hearing individuals, but it also offers a novel sensory experience for all users\cite{}.
+
+IMAGE
+
+This work physically and technically one of closer works to Embracing Sphere. Both of them in core concept translating audio signals into vibrotactile stimuli via an array of voice coils actuators embedded in a chair form factor.
+
+IMAGE
+
+Specifically Emoti-Chair using coils that have arranged in a two-column by eight-row array can be seen in the figure \ref{}, each corresponding to a specific frequency band. This spatial mapping allows users to feel different frequency components of sound at different locations on their body.
+
+In one of the interview they have made\footnote{SmartLab TMU News, Emoti-Chair: \url{https://youtu.be/gA--cOs87p4?feature=shared}}, researchers explains the system and describing their work as its confirming the idea that music is essentially multi-modal and maybe even a-modal. 
+
+Multimodal interfaces such as Emoti-Chair incorporate multiple forms of input and output to provide a variety of devices to support human-computer interactions. In further experiments researchers introduced Emoti-Chair to professional film-makers and singers in creating and experiencing tactile music on the Emoti-Chair\cite{}. They reported on responses to pre and post questionnaires that collected participant views about the workshop and about vibrotactile stimulation in general.
+
+During workshops with professional film-makers, singers and artists, participants either composed vibrotactile music for the first time or experienced their voices as tactile vibrations through the Emoti-Chair. Across these diverse participants, the technology has received positive feedbacks, with strong interest in using it for future projects. Future directions include enabling artists to further explore tactile composition and developing new instruments specifically for vibrotactile music.
+
+**Case Study: Movement and Impact**
+*Up to six million vehicles a year pass through the Gotthard Road Tunnel, Switzerland's most important north-south traffic artery. “Movement and Impact” gives you a completely new feeling for the Gotthard Tunnel and the cars and trucks incessantly pouring through it.*
+
+The quote above is taken from an artwork description named "Movement and Impact" co-created by Yvonne Weber, Sabine Haerri and the Ars Electronica Futurelab. I have discovered this artwork through a suggestion from my professor, Manuela Naveau and immediately I felt compelled to research further. It has exhibited in Ars Electronica Festival in 2009 and unfortunately I have no chance to experience again. I will do my best to explain the piece using the resources and visuals I have found online.
+
+IMAGE
+
+In this artwork, the artists translated the heavy flow of vehicles passing through Switzerland's Gotthard Road Tunnel into a tactile experience. Sensors laid on the ground captured real‑time data on traffic volume, vehicle size, weight, and direction. That data converted into gentle, rhythmic vibrations on a reclining platform\cite{}. 
+
+IMAGE
+
+In Movement and Impact, artists explored the translation of digital traffic data into a physical experience. Through transforming overwhelming, invisible data, they created an experience somehow intimate, tangible and even therapeutic.
+
+IMAGE
+
+Coincidentally I have chosen a similar practice for haptic content creation for Embracing Sphere. I recorded a bridge rumble which is emotionally close to me, Neue Eisenbahnbrücke in Linz.
+
+IMAGE
+
+Since starting my master’s studies at the University of Art and Design Linz, Linke Brückenstraße was my first place of accommodation and for a year and a half, I crossed this bridge nearly every morning and night. Sometimes I sat and listen waves, sometimes I put my headphones on and just feel the heavy rumble of big metal frames of this beautiful bridge. 
+
+Eventually, I decided to document my experience in an auditory way. However, the experience of this bridge is far from purely auditory, so I grabbed my geophone (an electronic seismic recording device) and recorded the bridge’s rumble and the vibrations caused by passing vehicles.
+
+IMAGE
+
+In conclusion, Movement and Impact was not something I knew about before making these recordings or starting to develop Embracing Sphere. However, researching this artwork has convinced me to continue along this path. I may be on the right track to express my own experience. The original files of this recording session will be used in Embracing Sphere content.
+
+**Case Study: Exclusive Games**
+Both Nintendo Switch and PlayStation consoles have unique controllers. Joy-Cons for Nintendo Switch and DualSense/DualShock for PlayStation, both of them features advanced haptic feedback technologies. Many exclusive games are designed to take advantage of these features such as Astro's Playroom and 1-2 Switch.
+
+IMAGE
+
+Astro's Playroom is an exclusive PS5 tech demo for the DualSense. In Astro's Playroom player can feel the texture of sand, the grittiness of ice and the tension of bow spring. Rainfall is simulated as tiny, distinct taps and pulling a bow uses adaptive triggers for realistic tension.
+
+PS5 DualSense utilizes voice coil actuators and adaptive triggers to produce complex vibration signals. Each side of the controller, there is a combination of a vibrotactile actuator, designed by Foster Electric\footnote{Commercial video of VCA from Foster Electric: \url{https://www.foster-electric.com/products/productdata/vibration_actuator_en.mp4}}.
+
+IMAGE
+
+1-2 Switch is a party game is essentially a tech demo or a showcase for HD Rumble. 1-2 Switch includes many mini games. In the “Ball Count” mini game, you “feel” virtual balls rolling inside the controller, simulating their number and movement, the "Shave" mini game, players hold the Joy-Cons as if they are a barber clipper and the Joy-Cons vibrating like the feeling of shaving facial hair. The goal is to shave a virtual beard by moving the Joy-Con in shaving motions and in the end players see who achieved the closest and cleanest shave. Except the end results the game is not relying on any visual displays, the gameplay focused only on the vibrotactile sensation from the controller.
+
+Both of the consoles and the examples that we covered is utilizing haptic capabilities of their gamepads quite intuitive. In "Chapter 1 - Introduction, Embracing Sphere and My Own Perception" section we mentioned an old technology of Playstation 2 Dualshock 2 in figure \ref{}, the haptic technology back then was using weighted motors that spinning off-center to create a general rumble and it was quite low resolution and not expressive enough in comparison today's haptic technologies that uses linear resonant actuators\cite{}. The DualSense and Joy-Cons haptic actuators are basically small speakers that can playback low frequencies good and clear for haptic feeling.
+
+**Case Study: Racing Simulations**
+Throughout my research I've explained many different inspirations that I had for the Embracing Sphere. Audio-tactile interfaces I have discovered, includes many artworks, interactive media or video games that might have been relatively linked with Embracing Sphere in concept or software/hardware side.
+
+This case study about racing simulations will cover current haptic technologies in sim-racing video games and hardwares. Additionally the section is going to be about my own experience with sim-racing and seated vibrotactile stimulation.
+
+In 2021 when I was a bachelor's student, me and my dear friend Can Memişoğulları, started to play a racing game called F1 2020. At first we played through the main content that is basically raced against AI. Then after a while Can mentioned about a community that organize its own online racing league in F1 2020. The league organized at the Covid times and every member of the league were adults whom has a lot of free time to spend on practicing and preparing to race competitively. Looking from now it feels so absurd that we had set schedule for a different race each week, live coverage with commentary for all games and even referee committee that gets together after the race for to check the incidents happened in the race.
+
+IMAGE
+
+First season (nearly 10 weeks) me and Can raced with a generic gamepad and there was a distinctive difference between players who use gamepad and players who use force feedback (FFB )wheels. FFB wheel users were basically faster and more consistent in vehicle control. Of course there is more than one parameter different between gamepad and FFB wheel but there was the consensus about the pace different is coming from feeling of the state of vehicle.
+
+IMAGE
+
+FFB is a technology used in racing simulation hardware, especially in steering wheels, to provide physical sensations that mimic real-world driving. FFB wheels use motors and sensors to generate resistance, vibrations, and subtle movements that reflect what is happening with the car in the game. This feedback allows the player to feel important information, such as:
+- The grip level of tires
+- Road surface texture (bumps, kerbs, gravel traps)
+- Weight transfer of the car while cornering, braking and accelerating
+When racing with a gamepad, the only feedback comes from visual and sometimes subtle vibration cues. This makes it harder to judge the car’s behavior, especially at the limit. With an FFB wheel, the physical sensations are much richer and more detailed. This difference is why FFB wheel users tend to be faster and more consistent in sim-racing league.
+
+With that information I decided to buy myself a FFB wheel. The wheel I bought was belt-driven Thrustmaster T300 RS GT as seen in the figure. \ref{}. 
+
+IMAGE
+
+My experience after I adapted my driving style and muscle memory to a wheel that I've started to see improvements in my peak pace and overall consistency around track. I believe it is mostly because of constant vehicle state information stream to my nervous system with FFB. I could feel the loosing grip on back tires when I made a mistake out of corner. The more interesting part I started to make real life reactions to vehicle behavior such as counter steering and brake pressure managements\footnote{A short clip of my driving from the online sim-racing league: \url{}}.
+
+Sim-racing softwares (racing video games) are developed realism taken into account and sim-racing games are benchmark for immersive experiences in the gaming industry, especially through their advanced use of haptic feedback. Video games such as iRacing and BeamNG.drive are renowned for their realistic simulation of vehicle dynamics, which is later integrated to haptic hardwares such as FFB wheels and bass shakers.
+
+These simulation games are designed to take full advantage of haptic hardware. For example i Racing provides highly detailed telemetry data that is used by force feedback systems to replicate real-world car behavior. Third party softwares can receive this telemetry data, evaluate and output a haptic feedback signal stream. This integration make the player feel every bump, skid and collision.
+
+IMAGE
+
+Since 2021 I followed the technological developments in sim-racing softwares and hardwares. As my experience directs I believed that it is really immersive and most of the reason of immersion was coming from haptic feedback that has evaluated through simulation telemetry data. Because of that in Embracing Sphere, I chose to utilize a similar setup to create virtual environment for navigating and exploring.
+## ​2.4 Audio-Tactile Interaction
