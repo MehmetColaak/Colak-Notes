@@ -315,6 +315,16 @@ IMAGE
 
 Both of the consoles and the examples that we covered is utilizing haptic capabilities of their gamepads quite intuitive. In "Chapter 1 - Introduction, Embracing Sphere and My Own Perception" section we mentioned an old technology of Playstation 2 Dualshock 2 in figure \ref{}, the haptic technology back then was using weighted motors that spinning off-center to create a general rumble and it was quite low resolution and not expressive enough in comparison today's haptic technologies that uses linear resonant actuators\cite{}. The DualSense and Joy-Cons haptic actuators are basically small speakers that can playback low frequencies good and clear for haptic feeling.
 
+To test DualSense haptic capabilities I prepared a recording setup. The setup includes 1 low frequency contact microphone (Lom Geofon) and a sound device (Audient EVO 4) for recording. 
+
+IMAGE
+
+In the test I played first couple minutes of the Astro's Playroom and simultaneously recorded DualSense vibrations with a microphone setup shown in the figure \ref{} and recorded a video of this process. The test focus is analyzing haptic output for main character Astro's footsteps on different materials. In game audio practice footsteps designed with variations on different materials\cite{}. In Astro's Playroom haptic feedback also varies according to a material which Astro is stepping. 
+
+IMAGE
+
+Above figure \ref{} is showing the waveforms of 4 different haptic footstep signal on different material. As we can see from the waveforms, glass and sand footsteps has more high frequency and specifically sand footstep has noisy texture. The test results shows us the variations on haptic signals for different texture needs. Game audio designers, deliberately designed another layer to enhance multi-modal stimulation.
+
 **Case Study: Racing Simulations**
 Throughout my research I've explained many different inspirations that I had for the Embracing Sphere. Audio-tactile interfaces I have discovered, includes many artworks, interactive media or video games that might have been relatively linked with Embracing Sphere in concept or software/hardware side.
 
@@ -347,4 +357,14 @@ These simulation games are designed to take full advantage of haptic hardware. F
 IMAGE
 
 Since 2021 I followed the technological developments in sim-racing softwares and hardwares. As my experience directs I believed that it is really immersive and most of the reason of immersion was coming from haptic feedback that has evaluated through simulation telemetry data. Because of that in Embracing Sphere, I chose to utilize a similar setup to create virtual environment for navigating and exploring.
-## ​2.4 Audio-Tactile Interaction
+
+**Case Study: Feelies in Brave New World by Aldous Huxley**
+Brave New World, is a dystopian novel by English author Aldous Huxley. He has written Brave New World in 1931 and published in 1932\cite{}. The story begins in a distant future London, where people are engineered and conditioned from birth into fixed classes: Alpha, Beta, Gamma, Delta, and Epsilon. Embryos are chemically altered to suit their future roles. Higher classes are genetically enhanced, while lower-class citizens are deliberately impaired. Each class is trained/conditioned to accept its status, wears distinct clothing and fulfills specific societal functions such as leadership or manual labor.
+
+IMAGE
+
+In Brave New World, a distinctive imaginary multi-sensory entertainment medium called the "feelies" is introduced. This sensory apparatus serves as a cinema-like experience but unlike conventional cinema, it incorporates not only sight and sound but also smell and touch. The feelies are depicted as one of the society’s control mechanisms, alongside drugs like "soma" and sleep-learning techniques "hypnopaedia."\cite{}. The masses kept under control and satisfied using feelies as an amusement tool within the theme of sensory colonization\cite{}.
+
+According to Grossi\cite{}, the fantasy of total sensory cinema is deeply tied to the configuration of a mass society and the programming of human psyche. The pejorative descriptions of these technologies aside, the idea of an enhanced multi-sensory medium and imagining this during the golden age of real-world cinema fascinated me. Even today, the development of immersive media continues to involve the direct "colonization" of human sensory fields such as virtual reality and augmented reality technology advancements.
+
+Eventually, Embracing Sphere can be seen as re-evaluation or re-imagination of many of these examples discussed in the section "Haptics in Media Arts and Video Games". As the artist behind this project, I have tried my best to be honest and true to my own creation. Practicing artistic/scientific research about my work was the main control system of my artistic outputs, provided me a reference in my domain and my pursuit. With the inspirations covered in detail this section, the next chapter "Personal Project, System Design and Methodology" will describe practical and design features of Embracing Sphere.
